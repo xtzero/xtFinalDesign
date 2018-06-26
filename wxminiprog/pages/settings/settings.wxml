@@ -1,0 +1,9 @@
+<!--pages/settings/settings.wxml-->
+<view class='container'>
+  <view bindtap='tapAbout' class='lisitem lisitem-div'>
+    关于 旅图
+  </view>
+  <view bindtap='tapFeedback' class='lisitem'>
+    意见与反馈
+  </view>
+</view>

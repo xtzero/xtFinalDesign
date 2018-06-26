@@ -1,0 +1,9 @@
+<!--pages/explore/explore.wxml-->
+<scroll-view class='maincontainer' scroll-y  bindscrolltolower="lower" enable-back-to-top="true">
+  <view bindtap='tapArticle' wx:for="{{articles}}" class='article-block' data-aid="{{item.aid}}">
+    <image mode='aspectFill' class='image' src='{{item.cover}}'></image>
+    <view class='container'></view>
+    <view class='title'>{{item.title}}</view>
+  </view>
+  <view class='loading' wx:if="{{nomore}}">没有更多了</view>
+</scroll-view>

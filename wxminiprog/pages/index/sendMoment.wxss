@@ -1,0 +1,63 @@
+/* pages/index/sendMoment.wxss */
+.xtBody{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+}
+
+.textarea{
+  background-color: white;
+  width: 100vw;
+  height: 200px;
+  padding:20px;
+  margin: 0;
+}
+
+.images{
+  width: 100vw;
+}
+
+.images-block{
+  float: left;
+  position: relative;
+}
+
+.image-uploading{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 10000;
+  bottom: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.addPic{
+  width: 66px;
+  height: 66px;
+  margin: 10px 5px;  
+}
+
+.uploading{
+  z-index: 10000;
+  background-color: black;
+  color: white;
+}
+
+.sendBtn,.sendBtn-disbled{
+  display: inline-block;
+  width: 92%;
+  margin-left: 4%;
+  height: 44px;
+  text-align: center;
+  padding: 0 4px;
+  line-height: 44px;
+  background-color: #34537c;
+  color: white;
+}
+
+.sendBtn:active{
+  background-color: black;
+}

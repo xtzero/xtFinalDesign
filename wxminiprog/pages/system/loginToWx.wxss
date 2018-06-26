@@ -1,0 +1,15 @@
+/* pages/system/loginToWx.wxss */
+.tip{
+  margin-top: 40%;
+  margin-bottom: 20px;
+}
+
+.tip2{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.login{
+  background-color: #27b126;
+  color: white;
+}

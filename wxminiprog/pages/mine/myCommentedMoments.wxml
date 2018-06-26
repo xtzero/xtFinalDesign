@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class='loading' wx:if="{{pulldownRefreshing}}">正在加载</view>
+<scroll-view class='maincontainer' scroll-y  bindscrolltolower="lower" enable-back-to-top="true">
+  <view class='card' wx:for="{{moments}}" bindtap='tapCard' data-d='{{item}}'>
+    <view class='card-top'>
+      <image src='{{item.usericon}}' class='top-left'></image>
+      <view class='top-right'>
+        <view class='top-name'>{{item.nickname}}</view>
+        <view class='top-time'>{{item.moment_time}}</view>
+      </view>
+    </view>
+    <view class='moment-content'>{{item.moment_content}}</view>
+    <image mode='center' src='{{item.moment_images}}' class='moment-image'></image>
+    <view class='ori-moment'>
+      <view class='comment-content'>我：{{item.comment_content}}</view>
+    </view>
+  </view>
+  <view class='loading' wx:if="{{nomore}}">没有更多了</view>
+</scroll-view>

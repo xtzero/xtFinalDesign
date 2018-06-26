@@ -1,0 +1,92 @@
+/* pages/index/momentDetail.wxss */
+.image{
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.leftBlock{
+  width: 100%;
+  height: 33px;
+  border-left: solid 10px #34537c;
+  padding-left: 10px;
+  margin-left: 5px;
+  line-height: 33px;
+  font-size: 15px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2px;
+  border-top: solid #f5f5f5 1px;
+}
+
+.card-head{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.card-head-image{
+  width: 36px;
+  height: 36px;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.card-head-right{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  line-height: 50px;
+  margin-left: 5px;
+}
+
+.card-name{
+  font-size: 15px;
+}
+
+.card-time{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.card-content{
+  font-size: 14px;
+  width: 96%;
+  margin-left: 2%;
+}
+
+.newComment-block{
+  display: flex;
+  background-color: lightgrey;
+}
+
+.newComment{
+  flex-direction: row;
+  margin: 5px 10px;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.newComment-input{
+  width: 70%;
+  border-bottom: solid 1px black;
+}
+
+.newComment-btn{
+  width: 30%;
+}
+
+.content-block{
+  background-color: #f5f5f5;
+  color: black;
+  width: 100%;
+  border: solid #b6b6b6 1px;
+  margin: 5px 0;
+  padding: 10px 5px;
+}

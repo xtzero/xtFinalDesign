@@ -1,0 +1,5 @@
+<!--pages/system/loginToWx.wxml-->
+
+<view class='tip'>请授权使用微信登录“旅图”</view>
+<button bindtap='login' class='login'>授权</button>
+<view class='tip2'>点击授权意味着你将成为我们的用户，我们将保留所有管理用户数据的权利。</view>

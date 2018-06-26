@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/settings/aboutUs",
+    "pages/settings/feedback",
+    "pages/mine/myCommentedMoments",
+    "pages/mine/mine",
+    "pages/settings/settings",
+    "pages/explore/article",
+    "pages/index/momentDetail",
+    "pages/mine/myMoments",
+    "pages/index/sendMoment",
+    "pages/system/signin",
+    "pages/logs/logs",
+    "pages/explore/explore",
+    "pages/system/loginToWx"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#34537c",
+    "navigationBarTitleText": "旅图",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#e6e6e6",
+    "borderStyle": "#34537c",
+    "backgroundColor": "#34537c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_click.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/explore/explore",
+        "iconPath": "images/explore.png",
+        "selectedIconPath": "images/explore_click.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_click.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

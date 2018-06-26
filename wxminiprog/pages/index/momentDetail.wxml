@@ -1,0 +1,52 @@
+<!--pages/index/momentDetail.wxml-->
+<scroll-view scroll-y class='xtBody' bindscrolltolower="up">
+  <view class='card'>
+    <view class='user-block'>
+      <view class='user-left'>
+        <image class='usericon' src='{{momentDetail.usericon}}'></image>
+      </view>
+      <view class='user-right'>
+        <view class='nickname'>{{momentDetail.nickname}}</view>
+        <view class='time'>发表于 {{momentDetail.time}}</view>
+      </view>
+    </view>
+    <view class='content'>
+      {{momentDetail.content}}
+    </view>
+  </view>
+
+  <view class='tip-block'>
+    <view class='tip-left'></view>
+    <view class='tip-content'>图集</view>
+  </view>
+
+  <view class='image-block' wx:for="{{momentDetail.images}}">
+    <image mode="aspectFill" class='images' src='{{item}}'></image>
+  </view>
+
+  <view class='tip-block'>
+    <view class='tip-left'></view>
+    <view class='tip-content'>最新评论</view>
+    <view class='tip-right' bindtap='displayCommentInput'>+ 写评论</view>
+  </view>
+
+  <view class='card comment-block'  wx:if="{{displayCommentInput}}">
+    <textarea bindinput='inputCommentContent' adjust-position auto-height class='comment-input' placeholder='要发表什么看法呢'></textarea>
+    <view class='comment-send' bindtap='addComment'>{{sendCommentBtnContent}}</view>
+  </view>
+
+  <view class='card comment-card' wx:for="{{momentDetail.comments}}">
+    <view class='user-block'>
+      <view class='user-left'>
+        <image class='usericon' src='{{item.usericon}}'></image>
+      </view>
+      <view class='user-right'>
+        <view class='nickname'>{{item.nickname}}</view>
+        <view class='time'>发表于 {{item.time}}</view>
+      </view>
+    </view>
+    <view class='content'>
+     {{item.content}}
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,39 @@
+<!--pages/settings/aboutUs.wxml-->
+<view class='container'>
+ 
+
+  <view class='card'>
+   <view class='card card1'>
+    <image class='usericon' src='/images/myicon.jpg'></image>
+    <view class='username'>zero.xt</view>
+  </view>
+    <view class='card-block'>
+      你好，我是xt。
+    </view>
+    <view class='card-block'>
+      来自大连工业大学，计算机专业的本科生。
+    </view>
+    <view class='card-block'></view>
+    <view class='card-block'>
+      而你正在玩耍的这个，是我的本科毕业设计。  
+    </view>
+    <view class='card-block'>
+      程序设计一直是我的爱好，能搞出一个让很多人喜欢的产品，也是我的梦想。
+    </view>
+    <view class='card-block'>
+      这个东西，说实话，我没有投注太多时间。实现的功能，也是少之又少。以至于我不敢拿“简洁”当成是借口。
+    </view>
+    <view class='card-block'>
+      经过一番波折，在我毕业答辩两天前的午夜，它终于诞生了。而现在（2018年6月18日 00:03:09），正是内测阶段。
+    </view>
+    <view class='card-block'>
+      未来它会怎样，我也不知道。也许我会在工作之余继续完善它，让它成为一个成功的产品，可以让更多的旅行爱好者聚集于此，分享自己的见闻或是记录自己的人生。
+    </view>
+    <view class='card-block'>
+      能看到这里的，都是真爱。谢谢你。
+    </view>
+    <view class='card-block tip'>
+      xt 2018年6月18日于大连工业大学
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/system/signin.wxml-->
+<image class='icon' src='{{icon}}' bindtap='tapIcon'></image>
+<view class='tip'>选择头像</view>
+<view class='tip'>想让别人怎样称呼你？</view>
+<input class='nickname' bindinput='inputNickname' placeholder='倔强的李狗蛋'></input>
+
+<button bindtap='ok' class='ok'>决定了！</button>
+<view class='agree'>进入小程序则表示你同意我们的用户条款。</view>

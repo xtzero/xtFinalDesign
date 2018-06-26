@@ -1,0 +1,43 @@
+<!--pages/explore/article.wxml-->
+<view class='xtBody'>
+  <!--标题、封面、作者、时间在一起  -->
+  <view class='title-block card'>
+    <image mode='aspectFill' class='banner' src='{{articleDetail.banner}}'></image>
+    <view class='title-container'></view>
+    <view class='titleAndAuthor'>
+      <view class='title'>{{articleDetail.title}}</view>
+      <view class='author'>@{{articleDetail.author}}</view>
+    </view>
+  </view>
+  <!--然后到了文章主体  -->
+  <!--文章主体中有这么几种类型：  br是换行、text是普通文本、colorSpan是带颜色的占一行的框、image是图片、strongText以粗体显示、-->
+  <view class='content-block card'>
+    <!--这里开始循环文章内容  -->
+    <view wx:for="{{articleDetail.content}}">
+
+      <!--普通文本  -->
+      <view class='content-text' wx:if="{{item[0]=='text'}}">{{item[1]}}</view>
+
+      <!--色块  -->
+      <view class='colorSpan' wx:elif="{{item[0]=='colorSpan'}}">{{item[1]}}</view>
+
+      <!--粗体文本  -->
+      <view class='strongText' wx:elif="{{item[0]=='strongText'}}">{{item[1]}}</view>
+
+      <!--图片  -->
+      <image mode='aspectFill' class='content-image' wx:elif="{{item[0]=='image'}}" src='{{item[1]}}'></image>
+    </view>
+    <!--循环文章内容结束  -->
+  </view>
+
+  <!--原文链接和原文声明  -->
+  <view class='source-block card'>
+    <view class='tip'>本站旅行攻略数据来自携程网。</view>
+    <view class='time'>本文由 {{articleDetail.author}} 于 {{articleDetail.time}}发表在携程网。</view>
+    <view class='link'>本文链接： <view class='link-link'>{{articleDetail.url}}</view> </view>
+  </view>
+
+  <!--底线  -->
+  <view class='bottomLine'>-----我是有底线哒-----</view>
+  <view class='bottomLine'>xt@旅图 提供技术支持</view>
+</view>

@@ -1,0 +1,41 @@
+/* pages/system/signin.wxss */
+.icon{
+  margin-top: 15vh;
+  margin-left: calc((100vw - 60px) / 2);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.tip{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 4px;
+}
+
+.tip:nth-of-type(2){
+  margin-top: 10vh;
+  margin-bottom: 20px;
+}
+
+.nickname{
+  border-bottom: solid black 1px;
+  font-size: 15px;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.ok{
+  margin-top: 10vh;
+  width: 60vw;
+  margin-left: 20vw;
+}
+
+.agree{
+  margin-top: 10vh;
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class='loading' wx:if="{{pulldownRefreshing}}">正在加载</view>
+<scroll-view class='container' scroll-y  bindscrolltolower="lower" bindscrolltoupper="upper" enable-back-to-top="true">
+  <view class='card' wx:for="{{moments}}" bindtap='tapCard' data-d='{{item}}'>
+    <view class='card-header'>
+      <image class='card-header-image' src='{{item.usericon}}'></image>
+      <view class='card-header-right'>
+      <text class='card-header-right-name'>{{item.name}}</text>
+      <text class='card-header-right-time'>发表于 {{item.time}}</text>
+      </view>
+    </view>
+    <image mode='aspectFill' src="{{item.image}}" class='card-image'></image>
+  </view> 
+</scroll-view>
+<view class='loading' wx:if="{{nomore}}">没有更多了</view>
+<image src='/images/newMoment.png' class='newContent' bindtap='jumpToSend'></image>

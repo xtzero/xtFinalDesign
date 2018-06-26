@@ -1,0 +1,24 @@
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+  <view class='userinfo listitem-div'>
+  <image class='usericon' src='{{usericon}}' bindtap='tapUsericon'></image>
+    <!-- <image bindtap='tapUsericon' class='usericon' src='{{usericon}}'></image> -->
+    <view bindtap='tapNickname' class='username'>{{nickname}}</view>
+  </view>
+  <view class='tip'>点击头像/昵称可以进行对应修改。</view>
+  <view class='changeNickname' wx:if="{{changeNickname}}">
+    <input bindinput='inputNewNickname' class='changeNickname-input' placeholder='输入你的新名字'></input>
+    <view class='changeNickname-btn' bindtap='changeNickname'>确认</view>
+  </view>
+
+  <view bindtap='tapMyMoments' class='listitem listitem-div'>
+    我的帖子
+  </view>
+  <view bindtap='tapMyCommentedMoments' class='listitem'>
+    我参与的
+  </view>
+
+  <view class='listitem listitem-div' bindtap='jumpToSetting'>
+    设置
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/index/sendMoment.wxml-->
+<view class='xtBody'>
+  <textarea class="textarea" placeholder="讲一讲你旅途中的故事吧" bindinput="textareaInput" value='{{momentContent}}'/>
+  <view class='images'>
+    <view class='images-block' wx:for="{{images}}" wx:for-index="i">
+      <image bindtap='tapImage' class='addPic' src='{{item.url}}' data-index="{{i}}"></image>
+      <text class='image-uploading' wx:if="{{item.uploading}}">上传中</text>
+    </view>
+    <view class='images-block'>
+      <image wx:if="{{displayAddImgBtn}}" bindtap='tapAddImg' class='addPic' src='/images/addPic.png' ></image>
+    </view>
+  </view>
+  <view wx:if="{{images.length>0}}" class='sendBtn' bindtap='sendMoment'>发送</view>
+  <view wx:elif="{{uploadingImage}}" class='sendBtn-disbled'>正在上传图片，请稍等</view>
+  <view wx:else class='sendBtn-disbled'>至少要添加一张图</view>
+</view>
